@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/c90bd6259d.js" crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;900;1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading"> <span class="boujee-text">Temperature Converter <i
+                    class="fa-solid fa-temperature-three-quarters"></i></span> </h1>
+        <div class="temp-container">
+            <label for="Celcius">Celsius:</label>
+            <input onchange="computeTemp(event)" name="Celcius" id="Celcius" class="Celcius"
+                placeholder="Enter Temperature in Celsius" />
+        </div>
+        <div class="temp-container">
+            <label for="fahre">Fahrenheit:</label>
+            <input onchange="computeTemp(event)" name="Fahrenheit" id="Fahrenheit" class="Fahrenheit"
+                placeholder="Enter Temperature in Fahrenheit" />
+        </div>
+        <div class="temp-container">
+            <label for="Kelvin">Kelvin:</label>
+            <input onchange="computeTemp(event)" name="Kelvin" id="Kelvin" class="Kelvin"
+                placeholder="Enter Temperature in Kelvin" />
+        </div>
+        <p> <i class="fa-solid fa-arrow-right fa-beat"></i> Press Enter for results...</p>
+    </div>
+    <footer>
+        <p class="footer-p">Made with <i class="fa-solid fa-heart fa-beat" style="color: #f20202;"></i> by Niharika</p>
+    </footer>
+    <script src="index.js"></script>
+ 
+</body>
+
+</html>
